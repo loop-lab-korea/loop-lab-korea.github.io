@@ -1,16 +1,20 @@
 ---
-layout: profiles
+layout: page
 title: PEOPLE
 permalink: /people/
 nav: true
 nav_order: 2
+---
 
-profiles:
-  - align: left
-    image: pi-portrait.jpg
-    more_info: >
-      <p><b>Jaesang Kim</b></p>
-      <p>Assistant Professor</p>
-      <p>jsang@jnu.ac.kr</p>
+### Principal Investigator
+
+* **Jaesang Kim** (김재상)
+  * Assistant Professor, Graduate School of Data Science, Chonnam National University
+  * Email: jsang@jnu.ac.kr
 
 ---
+
+### Members
+
+* **M.S. / Ph.D. Students & Interns**
+  * We are actively recruiting! Please check the HOME page for details.
