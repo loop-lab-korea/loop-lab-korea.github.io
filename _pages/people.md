@@ -7,7 +7,7 @@ nav_order: 2
 
 profiles:
   - align: left
-    image: principal_investigator.jpg
+    image: pi-portrait.jpg
     more_info: >
       <p><b>Jaesang Kim</b></p>
       <p>Assistant Professor</p>
