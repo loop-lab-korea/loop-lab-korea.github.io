@@ -7,7 +7,7 @@ nav_order: 2
 
 profiles:
   - align: left
-    image: pi-portrait.jpg # assets/img/jaesang_kim.jpg 파일 참조
+    image: pi-portrait.jpg
     image_circular: false   # true: 원형, false: 사각형
     more_info: >
       <p><b>Jaesang Kim</b> (김재상)</p>
