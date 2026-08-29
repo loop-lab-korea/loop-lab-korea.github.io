@@ -8,9 +8,8 @@ nav_order: 2
 profiles:
   - align: left
     image: principal_investigator.jpg
-    content: pi.md
     more_info: >
-      <p><b>Sang Jeon</b></p>
+      <p><b>Jaesang Kim</b></p>
       <p>Assistant Professor</p>
       <p>jsang@jnu.ac.kr</p>
   - align: left
