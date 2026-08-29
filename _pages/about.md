@@ -4,14 +4,6 @@ title: HOME
 permalink: /
 subtitle: <a href="https://gsds.jnu.ac.kr/">Graduate School of Data Science</a>, Chonnam National University
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # 프로필 사진 모양 (true: 원형, false: 사각형)
-  more_info: >
-    <p>Graduate School of Data Science</p>
-    <p>Chonnam National University</p>
-
 selected_papers: true # 최근 주요 논문 5개 자동 표시 (papers.bib에서 selected=true 설정된 항목)
 social: true # 하단 소셜 미디어 아이콘 표시 여부
 nav: true
