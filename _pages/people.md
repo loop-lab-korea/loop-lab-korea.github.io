@@ -12,10 +12,5 @@ profiles:
       <p><b>Jaesang Kim</b></p>
       <p>Assistant Professor</p>
       <p>jsang@jnu.ac.kr</p>
-  - align: left
-    image: student1.jpg
-    content: student1.md
-    more_info: >
-      <p><b>Hong Gildong</b></p>
-      <p>M.S. Student</p>
+
 ---
