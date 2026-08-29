@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Collaboration with the Kamm group at MIT published in *Advanced Healthcare Materials*: a microphysiological interface of skeletal myobundles and inflamed adipose tissue.
+Collaboration with the Kamm group at MIT published in _Advanced Healthcare Materials_: a microphysiological interface of skeletal myobundles and inflamed adipose tissue.
