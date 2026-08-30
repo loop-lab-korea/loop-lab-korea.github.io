@@ -91,3 +91,47 @@ html[data-theme="dark"] .navbar .container:not(:has(.navbar-brand))::before {
   flex: 0 0 100%;
   margin-left: 0;
 }
+
+
+/* ── Home profile ─────────────────────────────────────────────────────────
+   al-folio stacks the profile above the text on narrow screens, where the
+   photo then spans the full width and dominates the page. Keep it small and
+   beside the address so the page opens on the writing.
+
+   Markup is  .profile > figure > picture > img  plus a .address block.     */
+@media (max-width: 768px) {
+  .profile {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 14px;
+    float: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 1.5rem !important;
+    padding: 0 !important;
+  }
+  .profile figure,
+  .profile picture {
+    margin: 0 !important;
+    flex: 0 0 96px;
+    width: 96px;
+    display: block;
+  }
+  .profile img {
+    width: 96px !important;
+    height: auto !important;
+    margin: 0 !important;
+    border-radius: 6px;
+  }
+  .profile .address {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0 !important;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .profile .address p {
+    margin: 0 0 2px;
+  }
+}
