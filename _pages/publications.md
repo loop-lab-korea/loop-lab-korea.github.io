@@ -8,17 +8,12 @@ nav_order: 4
 years: [2026, 2025, 2024, 2022, 2021, 2018]
 ---
 
-<!-- Grouped by year. Entries come from _bibliography/papers.bib -->
+<!-- al-folio draws its own year headings, so do not add <h2> here -->
 <div class="publications">
-{% for y in page.years %}
-  <h2 class="year">{{ y }}</h2>
-  {% bibliography -f papers -q @*[year={{ y }}]* %}
-{% endfor %}
+{% bibliography -f papers %}
 </div>
 
----
-
-## Patents and Presentations
+<h2 class="mt-5">Patents and Presentations</h2>
 
 <div class="publications">
 {% bibliography -f patents_talks %}
