@@ -16,7 +16,6 @@ Chonnam National University
 77 Yongbong-ro, Buk-gu, Gwangju 61186, Republic of Korea<br>
 E-mail : [jsang@jnu.ac.kr](mailto:jsang@jnu.ac.kr)
 
-
 The laboratory opens in September 2026. Room and telephone details will be added
 once they are assigned.
 
