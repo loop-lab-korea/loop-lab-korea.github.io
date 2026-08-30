@@ -22,10 +22,11 @@ latest_posts:
 
 <link rel="stylesheet" href="{{ '/assets/css/loop.css' | relative_url }}">
 <figure class="hero-banner">
-  <img src="{{ '/assets/img/hero-loop.jpg' | relative_url }}"
-       alt="Perturb, observe, learn, predict — the cycle the lab runs on, illustrated
-            with a screening chip, a confocal muscle bundle, segmented cells and a
-            pathway score chart">
+  <img src="{{ '/assets/img/hero-loop.png' | relative_url }}"
+       alt="Schematic of the lab's cycle: perturb the tissue on a concentration
+            gradient chip, observe it by imaging, learn a model from segmented
+            measurements, predict the next condition, then perturb again">
+  <figcaption>Schematic. Perturb, observe, learn, predict — then perturb again.</figcaption>
 </figure>
 
 #### We make the data our models are judged by.
