@@ -11,7 +11,7 @@ scholar_userid: fav7NlMAAAAJ
 
 # Department / graduate school
 custom_social:
-  logo: jnu-mark.png
+  logo: /assets/img/jnu-mark.png
   title: Graduate School of Data Science, Chonnam National University
   url: https://ds.jnu.ac.kr
 
