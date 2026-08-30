@@ -1,14 +1,35 @@
-# this file contains the social media links and usernames of the author
-# the socials will be displayed in the order they are defined here
-# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
-cv_pdf: /assets/pdf/example_pdf.pdf # path to your CV PDF file
-email: you@example.com # your email address
-inspirehep_id: 1010907 # Inspire HEP author ID
-rss_icon: true # comment this line to hide the RSS icon
-scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
-# wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
-# whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
-  logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
-  title: Custom Social
-  url: https://www.alberteinstein.com/
+# Social links shown under the profile on the home page.
+# Displayed in the order defined here.
+# See https://github.com/george-gca/jekyll-socials for the full list of keys.
+#
+# Anything left commented out simply does not render — no placeholder icon.
+
+email: jsang@jnu.ac.kr
+
+# Google Scholar. The ID is the `user=` value in your Scholar profile URL.
+scholar_userid: fav7NlMAAAAJ
+
+# ORCID. Uncomment and fill in once registered — it is worth having.
+# orcid_id: 0000-0000-0000-0000
+
+# GitHub organisation for the lab.
+github_username: loop-lab-korea
+
+# Uncomment after uploading your CV to assets/pdf/.
+# cv_pdf: cv.pdf
+
+# ResearchGate: the part after /profile/ in your profile URL.
+# research_gate_profile: Jaesang-Kim
+
+# LinkedIn: the part after /in/ in your profile URL.
+# linkedin_username:
+
+# RSS feed icon. Uncomment only if you start writing blog posts.
+# rss_icon: true
+
+# ── Removed al-folio placeholders ────────────────────────────────────────
+# cv_pdf: /assets/pdf/example_pdf.pdf   ← sample PDF
+# email: you@example.com                ← sample address
+# inspirehep_id: 1010907                ← physics database, not applicable
+# scholar_userid: qc6CJjYAAAAJ          ← the theme author's Scholar profile
+# custom_social:                        ← linked to alberteinstein.com

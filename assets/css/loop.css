@@ -10,14 +10,18 @@
 
 /* ── Brand lockup ─────────────────────────────────────────────────────────
    The gem prints the site title as text, and prints nothing at all on the
-   home page. Two rules cover both cases with the same artwork.             */
+   home page. Two rules cover both cases with the same artwork.
 
-/* 1. Every page except home: the real brand link is kept (so it still goes
-      home) but its text is swapped for the logo. */
+   To switch logo artwork, change the four url() values below:
+     loop-logo-alt.png       <-> loop-logo.png
+     loop-logo-alt-dark.png  <-> loop-logo-dark.png
+   and the aspect-ratio:  5.317 (alt)  <->  4.892 (original)          */
+
 .navbar-brand.title {
   display: inline-block;
-  width: 181px;
   height: 34px;
+  aspect-ratio: 5.317;
+  width: auto;
   font-size: 0;
   line-height: 0;
   color: transparent;
@@ -26,18 +30,18 @@
   padding-bottom: 0;
 }
 
-/* 2. Home page: the gem renders no brand at all, so draw it on the navbar
-      container instead. :not(:has(...)) keeps it off every other page.     */
+/* Home page: the gem renders no brand at all, so draw it on the navbar
+   container instead. :not(:has(...)) keeps it off every other page. */
 .navbar .container:not(:has(.navbar-brand))::before {
   content: "";
   flex: 0 0 auto;
   align-self: center;
-  width: 181px;
   height: 34px;
+  aspect-ratio: 5.317;
   background: url("../img/loop-logo-alt.png") left center / contain no-repeat;
 }
 
-/* 3. Dark theme uses the light-lettered artwork. */
+/* Dark theme uses the light-lettered artwork. */
 html[data-theme="dark"] .navbar-brand.title,
 html[data-theme="dark"] .navbar .container:not(:has(.navbar-brand))::before {
   background-image: url("../img/loop-logo-alt-dark.png");
@@ -46,7 +50,6 @@ html[data-theme="dark"] .navbar .container:not(:has(.navbar-brand))::before {
 @media (max-width: 576px) {
   .navbar-brand.title,
   .navbar .container:not(:has(.navbar-brand))::before {
-    width: 138px;
     height: 26px;
   }
 }
