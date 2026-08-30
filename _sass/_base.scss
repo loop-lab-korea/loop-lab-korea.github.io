@@ -1,48 +1,51 @@
 // ─────────────────────────────────────────────────────────────
 // LOOP Lab — local style overrides (al-folio v1.x)
 //
-// In v1.x the base SCSS is gem-owned. A local file under _sass/
-// with the same name as a gem file overrides it, so define ONLY
-// the rules you want to change here.
+// In v1.x the base SCSS lives in the gem. A local file under
+// _sass/ with the same name overrides it, so define ONLY the
+// rules you want to change here.
 //
-// If your build reports that _base.scss shadows a gem file you
-// still need, rename this to _sass/_loop-overrides.scss and add
-//     @import "loop-overrides";
-// to _sass/_variables.scss instead.
+// If the build warns that _base.scss shadows a gem file you still
+// need, rename this to _sass/_loop-overrides.scss and create
+// _sass/_variables.scss containing:   @import "loop-overrides";
 // ─────────────────────────────────────────────────────────────
 
-// Always show the navbar brand, including on the home page.
-// al-folio hides it on "/" because the page prints the title itself.
-.navbar-brand,
-.navbar .navbar-brand,
+// ── Brand lockup ─────────────────────────────────────────────
+// The brand is an image (wordmark + mark), shown on every page by
+// the local _includes/header.liquid override.
 .navbar-brand.title {
-  opacity: 1 !important;
-  visibility: visible !important;
-  display: inline-flex !important;
+  display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-// Logo image sitting next to the brand text
 .navbar-brand .brand-logo {
-  height: 30px;
+  height: 34px;
   width: auto;
   display: block;
 }
 
-// Safety net: hide a duplicated home entry in the navbar.
-// Any nav item linking to "/" after the first one is hidden.
-.navbar-nav .nav-item:has(> a[href="/"]) ~ .nav-item:has(> a[href="/"]) {
-  display: none !important;
+// Light artwork on the dark theme, dark artwork on the light theme
+.brand-logo-dark { display: none; }
+
+html[data-theme="dark"] {
+  .brand-logo-light { display: none; }
+  .brand-logo-dark { display: block; }
 }
 
-// Own name in bold rather than italic in the publication list
+@media (max-width: 576px) {
+  .navbar-brand .brand-logo { height: 26px; }
+}
+
+// ── Publications ─────────────────────────────────────────────
+// Own name in bold rather than italic
 .publications .author em {
   font-style: normal;
   font-weight: 700;
 }
 
-// Publication thumbnails: square and tidy
+// Thumbnails square and tidy
 .publications .preview img {
   aspect-ratio: 1 / 1;
   object-fit: cover;
