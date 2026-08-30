@@ -9,24 +9,24 @@ nav_order: 6
 <link rel="stylesheet" href="{{ '/assets/css/loop.css' | relative_url }}">
 ## CONTACT INFORMATION
 
-#### Professor
+**Jaesang Kim, Ph.D.**<br>
+Assistant Professor, Graduate School of Data Science<br>
+Chonnam National University
 
-Graduate School of Data Science, Chonnam National University<br>
 77 Yongbong-ro, Buk-gu, Gwangju 61186, Republic of Korea<br>
 E-mail : [jsang@jnu.ac.kr](mailto:jsang@jnu.ac.kr)
 
-#### Laboratory
 
-Graduate School of Data Science, Chonnam National University<br>
-77 Yongbong-ro, Buk-gu, Gwangju 61186, Republic of Korea<br>
-E-mail : [jsang@jnu.ac.kr](mailto:jsang@jnu.ac.kr)
+The laboratory opens in September 2026. Room and telephone details will be added
+once they are assigned.
 
 ---
 
 #### Prospective students
 
-We are recruiting M.S. and Ph.D. students and undergraduate interns. Please email your
-CV together with a short note on your research interests. There is no fixed deadline;
-enquiries are welcome at any time.
+We are recruiting M.S. and Ph.D. students and undergraduate interns. Email
+[jsang@jnu.ac.kr](mailto:jsang@jnu.ac.kr) and tell me what you have been working on
+and what you would like to work on. There is no fixed deadline; enquiries are welcome
+at any time.
 
 <sub>전남대학교 데이터사이언스대학원 · 광주광역시 북구 용봉로 77</sub>
