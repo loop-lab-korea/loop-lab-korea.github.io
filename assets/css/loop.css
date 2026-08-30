@@ -21,7 +21,7 @@
   font-size: 0;
   line-height: 0;
   color: transparent;
-  background: url("../img/loop-logo.png") left center / contain no-repeat;
+  background: url("../img/loop-logo-alt.png") left center / contain no-repeat;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -34,13 +34,13 @@
   align-self: center;
   width: 166px;
   height: 34px;
-  background: url("../img/loop-logo.png") left center / contain no-repeat;
+  background: url("../img/loop-logo-alt.png") left center / contain no-repeat;
 }
 
 /* 3. Dark theme uses the light-lettered artwork. */
 html[data-theme="dark"] .navbar-brand.title,
 html[data-theme="dark"] .navbar .container:not(:has(.navbar-brand))::before {
-  background-image: url("../img/loop-logo-dark.png");
+  background-image: url("../img/loop-logo-alt-dark.png");
 }
 
 @media (max-width: 576px) {
