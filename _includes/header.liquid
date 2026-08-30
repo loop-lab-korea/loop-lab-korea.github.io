@@ -2,12 +2,12 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% comment %}
+      <!--
         LOOP Lab override of al_folio_core's header.liquid.
-        Only one thing is changed: the brand is rendered on every page,
-        including the home page, and it carries the lab mark.
-        Upstream wraps this block in {% if page.permalink != '/' %}.
-      {% endcomment %}
+        Only one thing differs from upstream: the brand is rendered on every
+        page, including the home page, and it uses the lab logo image.
+        Upstream skips the brand when the permalink is the site root.
+      -->
       <a class="navbar-brand title" href="{{ site.baseurl }}/" aria-label="{{ site.title }}">
         <img class="brand-logo brand-logo-light" src="{{ '/assets/img/loop-logo.png' | relative_url }}" alt="{{ site.title }}" />
         <img class="brand-logo brand-logo-dark" src="{{ '/assets/img/loop-logo-dark.png' | relative_url }}" alt="" aria-hidden="true" />
