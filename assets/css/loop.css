@@ -182,25 +182,46 @@ img[src*="interorgan"] {
 
 
 /* ── Publications list ────────────────────────────────────────────────────
-   The theme lays each entry out as col-sm-2 + col-sm-8, so two of the twelve
-   columns are left empty and the text wraps far earlier than it needs to.
-   Give the thumbnail a fixed width and hand the rest to the text.          */
-.publications li .row > .col-sm-2,
-.publications li .row > .col.col-sm-2 {
-  flex: 0 0 auto;
+   The theme lays each entry out as col-sm-2 + col-sm-8, leaving two of the
+   twelve columns unused so the text wraps earlier than it needs to.
+
+   The thumbnail column also carries Bootstrap's `.col`, which sets
+   flex-grow:1 — it therefore expands and pushes the text below it. Pin the
+   thumbnail to a fixed width, let the text take the remainder, and stop the
+   row wrapping. Nothing may exceed the container.                          */
+.publications li .row {
+  flex-wrap: nowrap;
+  max-width: 100%;
+}
+.publications li .row > .col.col-sm-2,
+.publications li .row > .col-sm-2 {
+  flex: 0 0 175px;
   width: 175px;
+  min-width: 175px;
   max-width: 175px;
 }
 .publications li .row > .col-sm-8 {
   flex: 1 1 auto;
   width: auto;
-  max-width: none;
+  min-width: 0;
+  max-width: 100%;
 }
+.publications .title,
+.publications .author,
+.publications .periodical,
+.publications .links {
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+
 @media (max-width: 576px) {
-  .publications li .row > .col-sm-2,
+  .publications li .row { flex-wrap: wrap; }
   .publications li .row > .col.col-sm-2,
+  .publications li .row > .col-sm-2,
   .publications li .row > .col-sm-8 {
+    flex: 0 0 100%;
     width: 100%;
+    min-width: 0;
     max-width: 100%;
   }
 }
@@ -238,8 +259,8 @@ img[src*="interorgan"] {
 
 
 /* ── Home banner ──────────────────────────────────────────────────────────
-   A single wide image above the text. Full container width, fixed 3:1 crop,
-   so the page opens on the work rather than on a portrait.                 */
+   The concept figure is a transparent PNG, so it sits on whichever theme
+   background is active. No white card is needed.                           */
 .hero-banner {
   margin: 0 0 2rem;
   line-height: 0;
@@ -247,20 +268,16 @@ img[src*="interorgan"] {
 .hero-banner img {
   width: 100%;
   height: auto;
-  aspect-ratio: 2400 / 980;
-  object-fit: contain;
-  border-radius: 8px;
   display: block;
-  background: #0b0d10;
 }
 .hero-banner figcaption {
   line-height: 1.5;
   font-size: 0.82rem;
   color: var(--global-text-color-light, #888);
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
   text-align: right;
 }
 @media (max-width: 576px) {
-  .hero-banner img { aspect-ratio: 2400 / 980; border-radius: 6px; }
   .hero-banner { margin-bottom: 1.5rem; }
 }
+
