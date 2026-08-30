@@ -8,17 +8,6 @@ subtitle: >
   <a href="https://ds.jnu.ac.kr/">Graduate School of Data Science</a>,
   <a href="https://www.jnu.ac.kr/">Chonnam National University</a>
 
-profile:
-  align: right
-  image: pi-portrait.jpg
-  image_circular: false
-  more_info: >
-    <p><b>Jaesang Kim, Ph.D.</b></p>
-    <p>Assistant Professor</p>
-    <p>Dept. of Data Science</p>
-    <p>Chonnam National University</p>
-    <p>Gwangju, Republic of Korea</p>
-
 selected_papers: true
 social: true
 
@@ -32,6 +21,13 @@ latest_posts:
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/loop.css' | relative_url }}">
+<figure class="hero-banner">
+  <img src="{{ '/assets/img/hero-loop.jpg' | relative_url }}"
+       alt="Perturb, observe, learn, predict — the cycle the lab runs on, illustrated
+            with a screening chip, a confocal muscle bundle, segmented cells and a
+            pathway score chart">
+</figure>
+
 #### We make the data our models are judged by.
 
 A model that predicts how a drug will act is only as good as the measurements it

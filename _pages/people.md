@@ -14,35 +14,34 @@ nav_order: 2
     {% include figure.liquid path="assets/img/pi-portrait.jpg" class="img-fluid rounded" %}
   </div>
   <div class="col-sm-8">
-    <h3><b>김재상 (Jaesang Kim)</b></h3>
-    <h5>Assistant Professor, Department of Data Science<br>
-    Graduate School of Data Science, Chonnam National University</h5>
-    <p>조교수 · 전남대학교 데이터사이언스대학원 데이터사이언스학과</p>
-    <p>
-      <b>Email</b> <a href="mailto:jsang@jnu.ac.kr">jsang@jnu.ac.kr</a>
+    <h3 class="mb-1"><b>김재상 (Jaesang Kim)</b></h3>
+    <p class="pi-role">
+      Assistant Professor · Graduate School of Data Science, Chonnam National University<br>
+      <span class="pi-role-ko">조교수 · 전남대학교 데이터사이언스대학원 데이터사이언스학과</span><br>
+      <a href="mailto:jsang@jnu.ac.kr">jsang@jnu.ac.kr</a>
     </p>
 
-    <p>
-      <b>EDUCATION</b><br>
+    <p class="pi-block">
+      <b class="pi-label">Education</b>
       <b>Ph.D.</b> Mechanical Engineering, KAIST, <i>August 2024</i><br>
-      <span style="padding-left:1.1em; display:inline-block">
-        <i>Three-dimensional musculoskeletal tissue engineering and its
-        applications using organ-on-a-chip platform</i><br>
-        Advisor: Prof. Jessie S. Jeon
-      </span><br>
-      <b>M.S.</b> Mechanical Engineering, KAIST &nbsp;&middot;&nbsp;
+      <span class="pi-sub"><i>Three-dimensional musculoskeletal tissue engineering and
+      its applications using organ-on-a-chip platform</i> · Advisor: Prof. Jessie S. Jeon</span><br>
+      <b>M.S.</b> Mechanical Engineering, KAIST &nbsp;·&nbsp;
       <b>B.S.</b> Mechanical Engineering, KAIST, minor in Biological Sciences
     </p>
 
-    <p>
-      <b>EXPERIENCE</b><br>
-      <b>Postdoctoral Scholar</b>, <i>2026</i><br>
-      <span style="padding-left:1.1em; display:inline-block">
-        Department of Cardiothoracic Surgery, Stanford University<br>
-        VA Palo Alto Health Care System
-      </span>
+    <p class="pi-block">
+      <b class="pi-label">Experience</b>
+      <b>Postdoctoral Scholar</b>, Stanford University, <i>2026</i><br>
+      <span class="pi-sub">Department of Cardiothoracic Surgery ·
+      VA Palo Alto Health Care System</span>
     </p>
 
+    <p class="pi-block">
+      <b class="pi-label">Interests</b>
+      Microphysiological systems, extracellular matrix mechanobiology, and machine
+      learning for drug response.
+    </p>
   </div>
 </div>
 
