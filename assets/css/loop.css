@@ -105,7 +105,6 @@ html[data-theme="dark"] .navbar .container:not(:has(.navbar-brand))::before {
   margin-left: 0;
 }
 
-
 /* ── Home profile ─────────────────────────────────────────────────────────
    al-folio stacks the profile above the text on narrow screens, where the
    photo then spans the full width and dominates the page. Keep it small and
@@ -159,17 +158,35 @@ html[data-theme="dark"] .navbar .container:not(:has(.navbar-brand))::before {
    own family or the nav icons turn into words.                              */
 
 :root {
-  --loop-sans: "Inter", "Noto Sans KR", -apple-system, BlinkMacSystemFont,
-               "Segoe UI", Helvetica, Arial, sans-serif;
+  --loop-sans: "Inter", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --loop-serif: "Newsreader", "Noto Sans KR", Georgia, "Times New Roman", serif;
 }
 
 body,
-p, li, dd, dt, td, th, figcaption, blockquote, label,
-input, select, textarea, button,
-.nav-link, .navbar, .footer, .caption, .publications, .news, .post {
+p,
+li,
+dd,
+dt,
+td,
+th,
+figcaption,
+blockquote,
+label,
+input,
+select,
+textarea,
+button,
+.nav-link,
+.navbar,
+.footer,
+.caption,
+.publications,
+.news,
+.post {
   font-family: var(--loop-sans);
-  font-feature-settings: "cv05" 1, "ss01" 1;
+  font-feature-settings:
+    "cv05" 1,
+    "ss01" 1;
 }
 
 body {
@@ -178,18 +195,29 @@ body {
   letter-spacing: -0.003em;
 }
 
-h1, h2, h3, h4,
-.post-title, .page-title, .publications h2.year, .card-title {
+h1,
+h2,
+h3,
+h4,
+.post-title,
+.page-title,
+.publications h2.year,
+.card-title {
   font-family: var(--loop-serif);
   font-weight: 500;
   letter-spacing: -0.012em;
   line-height: 1.22;
 }
 
-h1, .page-title { font-weight: 500; }
+h1,
+.page-title {
+  font-weight: 500;
+}
 
 /* Section rules read better with a little air above them */
-h2 { margin-top: 2.1rem; }
+h2 {
+  margin-top: 2.1rem;
+}
 
 /* The publication list stays sans — it is reference material, not prose */
 .publications .title,
@@ -197,25 +225,35 @@ h2 { margin-top: 2.1rem; }
 .publications .periodical {
   font-family: var(--loop-sans);
 }
-.publications .title { font-weight: 600; letter-spacing: -0.008em; }
-.publications .periodical { font-style: italic; }
+.publications .title {
+  font-weight: 600;
+  letter-spacing: -0.008em;
+}
+.publications .periodical {
+  font-style: italic;
+}
 
 /* Pull quotes and the tagline benefit from the serif */
-blockquote { font-family: var(--loop-serif); font-size: 1.12rem; }
+blockquote {
+  font-family: var(--loop-serif);
+  font-size: 1.12rem;
+}
 
 /* Code keeps a mono stack. Icon fonts are left alone entirely: the selectors
    above never match them, and overriding their family would turn every icon
    back into a word. */
-code, pre, kbd, samp {
+code,
+pre,
+kbd,
+samp {
   font-family: ui-monospace, SFMono-Regular, Menlo, "IBM Plex Mono", monospace;
 }
 
-
 /* Tall composite panels: keep them readable without dominating the page */
-img[src*="interorgan"], img[src*="/model.jpg"] {
+img[src*="interorgan"],
+img[src*="/model.jpg"] {
   max-height: 620px;
 }
-
 
 /* ── Publications list ────────────────────────────────────────────────────
    The theme lays each entry out as col-sm-2 + col-sm-8, leaving two of the
@@ -251,7 +289,9 @@ img[src*="interorgan"], img[src*="/model.jpg"] {
 }
 
 @media (max-width: 576px) {
-  .publications li .row { flex-wrap: wrap; }
+  .publications li .row {
+    flex-wrap: wrap;
+  }
   .publications li .row > .col.col-sm-2,
   .publications li .row > .col-sm-2,
   .publications li .row > .col-sm-8 {
@@ -293,7 +333,6 @@ img[src*="interorgan"], img[src*="/model.jpg"] {
   font-size: 0.94em;
 }
 
-
 /* ── Home banner ──────────────────────────────────────────────────────────
    The concept figure is a transparent PNG, so it sits on whichever theme
    background is active. No white card is needed.                           */
@@ -314,6 +353,7 @@ img[src*="interorgan"], img[src*="/model.jpg"] {
   text-align: right;
 }
 @media (max-width: 576px) {
-  .hero-banner { margin-bottom: 1.5rem; }
+  .hero-banner {
+    margin-bottom: 1.5rem;
+  }
 }
-
