@@ -21,8 +21,15 @@ latest_posts:
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/loop.css' | relative_url }}">
+<figure class="hero-title">
+  <img src="{{ '/assets/img/hero-title.jpg' | relative_url }}"
+       alt="LOOP Lab — Learning through Organ Observations and Perturbations.
+            장기반응 모델링 연구실. Graduate School of Data Science,
+            Chonnam National University">
+</figure>
+
 <figure class="hero-banner">
-  <img src="{{ '/assets/img/hero-loop.jpg' | relative_url }}"
+  <img src="{{ '/assets/img/hero-loop.png' | relative_url }}"
        alt="Schematic of the lab's cycle: perturb the tissue on a concentration
             gradient chip, observe it by imaging, learn a model from segmented
             measurements, predict the next condition, then perturb again">

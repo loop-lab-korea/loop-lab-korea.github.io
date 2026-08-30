@@ -22,7 +22,7 @@ the next experiment.
 
 ## Microphysiological systems for human tissue
 
-<p class="text-muted" style="font-size:.92rem; margin-top:.4rem">세포는 젤 안에 가만히 있지 않고 젤을 당깁니다. 그 힘으로 두 기둥 사이에 밴드 모양의 3차원 근조직이 만들어집니다. 세포외기질의 조성과 물성이 조직의 표현형을 결정합니다.</p>
+<p class="text-muted" style="font-size:.92rem; margin-top:.4rem">세포는 배양 접시 위에 눕혀두면 조직이 되지 않습니다. 3차원 기질 안에서 서로 당기고 정렬해야 조직다운 구조가 나옵니다. 기질의 조성과 물성, 배양 중 가하는 기계적 자극이 표현형을 결정합니다. 지금은 골격근과 혈관 조직을 이 방식으로 만들고 있습니다.</p>
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-6 mt-3 mt-md-0">
@@ -37,29 +37,29 @@ the next experiment.
   pillars until it becomes a suspended muscle band.
 </div>
 
-Cells do not simply sit in a gel; they pull on it. We use that force as the forming
-mechanism. Hydrogel fills the central channel, and the cells compact it against two
-anchor pillars into a suspended tissue band. Pillar geometry, matrix composition,
-gelation time and seeding density decide whether the result is robust enough to measure
-repeatedly, and we characterised each of them.
+Cells plated flat do not become tissue. They need a three-dimensional matrix to pull
+against, and the forces they generate are what shape the construct. We use that as the
+forming mechanism: hydrogel fills the channel and the cells compact it against anchor
+pillars until a suspended tissue band appears.
 
-**Extracellular matrix mechanobiology** is the control knob. Stiffness and
-viscoelasticity of the matrix set cell phenotype, so the same cells give different
-tissue depending on what we build them into.
+**Extracellular matrix mechanobiology** is the control knob. Stiffness, viscoelasticity
+and mechanical loading set cell phenotype, so the same cells give different tissue
+depending on what we build them into. Skeletal muscle and vasculature are where we have
+taken this furthest; the design rules are not specific to either.
 
 #### Journal Publications
 
 "Strategic Approaches in Generation of Robust Microphysiological 3D Musculoskeletal Tissue System."
-Kim et al., _Advanced Functional Materials_ 2024
+Kim et al., *Advanced Functional Materials* 2024
 
 "Development of a 3D Vascularized Skeletal Muscle Model Using Bi-Layered Seeding Methods."
-Kim et al., _BioChip Journal_ 2025
+Kim et al., *BioChip Journal* 2025
 
 ---
 
 ## Screening at a throughput a model can learn from
 
-<p class="text-muted" style="font-size:.92rem; margin-top:.4rem">농도구배 칩으로 조직 하나에서 약물 조건 96개를 동시에 시험합니다. 모델이 학습할 만큼 데이터가 쌓이는 지점을 만드는 것이 목표입니다.</p>
+<p class="text-muted" style="font-size:.92rem; margin-top:.4rem">신약 개발이 오래 걸리고 비싼 이유 중 하나는 후보물질을 검증할 수단이 부족하기 때문입니다. 조직 하나에서 약물 조건 수십 개를 한 번에 시험할 수 있으면, 그 검증에 드는 시간과 비용이 줄어듭니다. 동시에 모델이 학습할 만큼의 데이터가 쌓입니다.</p>
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-9 mt-3 mt-md-0">
@@ -71,23 +71,25 @@ Kim et al., _BioChip Journal_ 2025
   concentrations across the well array, checked against simulation.
 </div>
 
-A model needs more than a handful of conditions, and three-dimensional tissue is
-expensive to run. Our answer is a concentration gradient chip that turns one tissue
-specimen into a screen.
+Bringing a drug to the clinic is slow and expensive, and a large part of that cost sits
+in testing candidates that will not work. Three-dimensional tissue tests them better than
+flat culture does, but it is expensive to run at any scale. Our answer is a concentration
+gradient chip that turns a single tissue specimen into a screen.
 
 - **24 independent drug districts** from only two inlets and two outlets
 - One 4 × 4 mm tissue specimen tested against **96 drug conditions in parallel**
 - Well pitch matched to a 384-well plate, so a multichannel pipette works directly
 - 300 × 300 µm culture compartments
 
-That is the point at which organ-on-a-chip data becomes large enough to train on, not
-only to validate against.
+Two things follow. Candidate compounds can be narrowed down earlier, on human tissue
+rather than on cells in a dish. And organ-on-a-chip data becomes large enough to train a
+model on, not only to validate one against.
 
 ---
 
 ## Quantitative readouts of tissue state
 
-<p class="text-muted" style="font-size:.92rem; margin-top:.4rem">수축력·이미징·전사체는 단위가 서로 다릅니다. 이것들을 하나의 축에 올리는 일이 먼저입니다. 재현되지 않는 지표는 지표가 아닙니다. 그래서 정량화 과정 자체를 연구 대상으로 삼습니다.</p>
+<p class="text-muted" style="font-size:.92rem; margin-top:.4rem">어떤 실험 결과든 다른 연구실에서 재현되지 않으면 근거가 되지 못합니다. 수축력·이미징·전사체처럼 단위가 다른 측정을 하나의 축에 올리고, 그 과정을 사람이 손으로 조정하지 않게 만드는 일이 먼저입니다. 정량화 과정 자체를 연구 대상으로 삼는 이유입니다.</p>
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
@@ -112,16 +114,16 @@ tomorrow. A readout that does not reproduce is not a readout.
 #### Journal Publications
 
 "Detrimental Effects of Advanced Glycation End-Products (AGEs) on a 3D Skeletal Muscle Model in Microphysiological System."
-Kim et al., _Biosensors and Bioelectronics_ 2025
+Kim et al., *Biosensors and Bioelectronics* 2025
 
 "Investigation on the Effect of Cyclic Stretch and Hypoxia on Recovery of Damaged Skeletal Muscle Cells Using Microfluidic System."
-Kim et al., _Advanced Materials Technologies_ 2021
+Kim et al., *Advanced Materials Technologies* 2021
 
 ---
 
 ## Inter-organ interaction and drug-induced injury
 
-<p class="text-muted" style="font-size:.92rem; margin-top:.4rem">약물은 한 조직에만 작용하지 않습니다. 근육에서 시작된 손상이 신장으로 이어집니다. 이 과정을 공배양 소자에서 재현해 두 조직의 연결 자체를 측정합니다.</p>
+<p class="text-muted" style="font-size:.92rem; margin-top:.4rem">임상시험에서 약이 실패하는 흔한 이유가 예상치 못한 장기 독성입니다. 한 조직만 보는 시험으로는 이것을 미리 잡아내지 못합니다. 근육에서 시작된 손상이 신장으로 이어지는 과정을 공배양 소자에서 재현해, 조직 사이의 연결 자체를 측정합니다.</p>
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
@@ -143,16 +145,16 @@ measurable — and so that a model has something to learn the coupling from.
 #### Journal Publications
 
 "Implementation of Drug-Induced Rhabdomyolysis and Acute Kidney Injury in Microphysiological System."
-Kim et al., _Advanced Functional Materials_ 2026
+Kim et al., *Advanced Functional Materials* 2026
 
 "Investigation of the Dysfunction Caused by High Glucose, Advanced Glycation End Products, and Interleukin-1 Beta and the Effects of Therapeutic Agents on the Microphysiological Artery Model."
-Nam et al., _Advanced Healthcare Materials_ 2024
+Nam et al., *Advanced Healthcare Materials* 2024
 
 ---
 
 ## From tissue to a feature matrix
 
-<p class="text-muted" style="font-size:.92rem; margin-top:.4rem">이미징·형태·기능·오믹스 네 종류의 데이터를 하나의 특징 행렬로 만듭니다. 학습 데이터와 검증 실험이 같은 실험실에서 나옵니다. 그래서 예측을 보고하는 데 그치지 않고 틀렸는지 확인할 수 있습니다.</p>
+<p class="text-muted" style="font-size:.92rem; margin-top:.4rem">AI가 내놓는 후보는 많지만 그것을 검증할 실험 데이터는 부족합니다. 이미징·형태·기능·오믹스 네 종류의 측정을 하나의 특징 행렬로 만들어 모델이 학습할 수 있는 형태로 바꿉니다. 학습 데이터와 검증 실험이 같은 실험실에서 나오므로, 예측이 틀렸는지를 곧바로 확인할 수 있습니다.</p>
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-9 mt-3 mt-md-0">
@@ -166,14 +168,14 @@ Nam et al., _Advanced Healthcare Materials_ 2024
 The platform produces four kinds of data, and the work is turning them into one table a
 model can read.
 
-| Modality          | What it captures                                             |
-| ----------------- | ------------------------------------------------------------ |
-| **Imaging**       | tissue architecture, alignment and viability across the chip |
-| **Morphometrics** | per-cell shape, size and orientation                         |
-| **Functional**    | contractile force, barrier permeability, dose response       |
-| **Omics**         | transcriptomic state, reduced to pathway-level scores        |
+| Modality | What it captures |
+|---|---|
+| **Imaging** | tissue architecture, alignment and viability across the chip |
+| **Morphometrics** | per-cell shape, size and orientation |
+| **Functional** | contractile force, barrier permeability, dose response |
+| **Omics** | transcriptomic state, reduced to pathway-level scores |
 
-These become a feature matrix of _samples × features_, which is what a model actually
+These become a feature matrix of *samples × features*, which is what a model actually
 learns from. Because the training data and the validation experiment come from the same
 bench, a prediction here can be falsified rather than merely reported. That is the part
 of machine learning for drug discovery that is usually missing.
