@@ -48,10 +48,10 @@ tissue depending on what we build them into.
 #### Journal Publications
 
 "Strategic Approaches in Generation of Robust Microphysiological 3D Musculoskeletal Tissue System."
-Kim et al., *Advanced Functional Materials* 2024
+Kim et al., _Advanced Functional Materials_ 2024
 
 "Development of a 3D Vascularized Skeletal Muscle Model Using Bi-Layered Seeding Methods."
-Kim et al., *BioChip Journal* 2025
+Kim et al., _BioChip Journal_ 2025
 
 ---
 
@@ -106,10 +106,10 @@ tomorrow. A readout that does not reproduce is not a readout.
 #### Journal Publications
 
 "Detrimental Effects of Advanced Glycation End-Products (AGEs) on a 3D Skeletal Muscle Model in Microphysiological System."
-Kim et al., *Biosensors and Bioelectronics* 2025
+Kim et al., _Biosensors and Bioelectronics_ 2025
 
 "Investigation on the Effect of Cyclic Stretch and Hypoxia on Recovery of Damaged Skeletal Muscle Cells Using Microfluidic System."
-Kim et al., *Advanced Materials Technologies* 2021
+Kim et al., _Advanced Materials Technologies_ 2021
 
 ---
 
@@ -135,10 +135,10 @@ measurable — and so that a model has something to learn the coupling from.
 #### Journal Publications
 
 "Implementation of Drug-Induced Rhabdomyolysis and Acute Kidney Injury in Microphysiological System."
-Kim et al., *Advanced Functional Materials* 2026
+Kim et al., _Advanced Functional Materials_ 2026
 
 "Investigation of the Dysfunction Caused by High Glucose, Advanced Glycation End Products, and Interleukin-1 Beta and the Effects of Therapeutic Agents on the Microphysiological Artery Model."
-Nam et al., *Advanced Healthcare Materials* 2024
+Nam et al., _Advanced Healthcare Materials_ 2024
 
 ---
 
@@ -157,14 +157,14 @@ Nam et al., *Advanced Healthcare Materials* 2024
 The platform produces four kinds of data, and the work is turning them into one table a
 model can read.
 
-| Modality | What it captures |
-|---|---|
-| **Imaging** | tissue architecture, alignment and viability across the chip |
-| **Morphometrics** | per-cell shape, size and orientation |
-| **Functional** | contractile force, barrier permeability, dose response |
-| **Omics** | transcriptomic state, reduced to pathway-level scores |
+| Modality          | What it captures                                             |
+| ----------------- | ------------------------------------------------------------ |
+| **Imaging**       | tissue architecture, alignment and viability across the chip |
+| **Morphometrics** | per-cell shape, size and orientation                         |
+| **Functional**    | contractile force, barrier permeability, dose response       |
+| **Omics**         | transcriptomic state, reduced to pathway-level scores        |
 
-These become a feature matrix of *samples × features*, which is what a model actually
+These become a feature matrix of _samples × features_, which is what a model actually
 learns from. Because the training data and the validation experiment come from the same
 bench, a prediction here can be falsified rather than merely reported. That is the part
 of machine learning for drug discovery that is usually missing.
