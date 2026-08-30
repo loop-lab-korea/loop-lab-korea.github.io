@@ -17,23 +17,30 @@ nav_order: 2
     <h3><b>김재상 (Jaesang Kim)</b></h3>
     <h5>Assistant Professor, Department of Data Science<br>
     Graduate School of Data Science, Chonnam National University</h5>
+    <p>조교수 · 전남대학교 데이터사이언스대학원 데이터사이언스학과</p>
     <p>
-      Email: jsang@jnu.ac.kr
+      <b>Email</b> <a href="mailto:jsang@jnu.ac.kr">jsang@jnu.ac.kr</a>
     </p>
+
     <p>
       <b>EDUCATION</b><br>
-      <b>Korea Advanced Institute of Science and Technology (KAIST)</b><br>
-      Ph.D. in Mechanical Engineering, <i>June 2024</i><br>
-      Thesis Advisor: Prof. Jessie S. Jeon<br>
-      <b>KAIST</b><br>
-      M.S. in Mechanical Engineering<br>
-      <b>KAIST</b><br>
-      B.S. in Mechanical Engineering
+      <b>Ph.D.</b> Mechanical Engineering, KAIST, <i>August 2024</i><br>
+      <span style="padding-left:1.1em; display:inline-block">
+        <i>Three-dimensional musculoskeletal tissue engineering and its
+        applications using organ-on-a-chip platform</i><br>
+        Advisor: Prof. Jessie S. Jeon
+      </span><br>
+      <b>M.S.</b> Mechanical Engineering, KAIST &nbsp;&middot;&nbsp;
+      <b>B.S.</b> Mechanical Engineering, KAIST, minor in Biological Sciences
     </p>
+
     <p>
       <b>EXPERIENCE</b><br>
-      Postdoctoral Scholar, Department of Cardiothoracic Surgery, Stanford University<br>
-      VA Palo Alto Health Care System, <i>2026</i>
+      <b>Postdoctoral Scholar</b>, <i>2026</i><br>
+      <span style="padding-left:1.1em; display:inline-block">
+        Department of Cardiothoracic Surgery, Stanford University<br>
+        VA Palo Alto Health Care System
+      </span>
     </p>
   </div>
 </div>

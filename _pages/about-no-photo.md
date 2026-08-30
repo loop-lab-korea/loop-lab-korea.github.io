@@ -8,17 +8,6 @@ subtitle: >
   <a href="https://ds.jnu.ac.kr/">Graduate School of Data Science</a>,
   <a href="https://www.jnu.ac.kr/">Chonnam National University</a>
 
-profile:
-  align: right
-  image: pi-portrait.jpg
-  image_circular: false
-  more_info: >
-    <p><b>Jaesang Kim, Ph.D.</b></p>
-    <p>Assistant Professor</p>
-    <p>Dept. of Data Science</p>
-    <p>Chonnam National University</p>
-    <p>Gwangju, Republic of Korea</p>
-
 selected_papers: true
 social: true
 
