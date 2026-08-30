@@ -9,8 +9,8 @@
         Upstream skips the brand when the permalink is the site root.
       -->
       <a class="navbar-brand title" href="{{ site.baseurl }}/" aria-label="{{ site.title }}">
-        <img class="brand-logo brand-logo-light" src="{{ '/assets/img/loop-logo.png' | relative_url }}" alt="{{ site.title }}" />
-        <img class="brand-logo brand-logo-dark" src="{{ '/assets/img/loop-logo-dark.png' | relative_url }}" alt="" aria-hidden="true" />
+        <img class="brand-logo brand-logo-light" src="{{ '/assets/img/loop-logo.png' | relative_url }}" alt="{{ site.title }}">
+        <img class="brand-logo brand-logo-dark" src="{{ '/assets/img/loop-logo-dark.png' | relative_url }}" alt="" aria-hidden="true">
       </a>
       <!-- Navbar Toggle -->
       <button
@@ -37,7 +37,9 @@
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
               {{- about_title }}
-              {% if page.permalink == '/' %}<span class="sr-only">(current)</span>{% endif %}
+              {% if page.permalink == '/' -%}
+                <span class="sr-only">(current)</span>
+              {%- endif %}
             </a>
           </li>
 
@@ -61,7 +63,9 @@
                     aria-expanded="false"
                   >
                     {{- p.title }}
-                    {% if page.title == p.title or has_active_child %}<span class="sr-only">(current)</span>{% endif %}
+                    {% if page.title == p.title or has_active_child -%}
+                      <span class="sr-only">(current)</span>
+                    {%- endif %}
                   </a>
                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                     {% for child in p.children %}
@@ -90,7 +94,9 @@
                   {%- endif %}
                   <a class="nav-link" href="{{ url | relative_url }}">
                     {{- p.title }}
-                    {% if page.url contains p.url %}<span class="sr-only">(current)</span>{% endif %}
+                    {% if page.url contains p.url -%}
+                      <span class="sr-only">(current)</span>
+                    {%- endif %}
                   </a>
                 </li>
               {% endif %}

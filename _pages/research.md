@@ -33,10 +33,10 @@ class of effect, and so no model trained on one can either.
 #### Journal Publications
 
 "Strategic Approaches in Generation of Robust Microphysiological 3D Musculoskeletal Tissue System."
-Kim et al., *Advanced Functional Materials* 2024
+Kim et al., _Advanced Functional Materials_ 2024
 
 "Development of a 3D Vascularized Skeletal Muscle Model Using Bi-Layered Seeding Methods."
-Kim et al., *BioChip Journal* 2025
+Kim et al., _BioChip Journal_ 2025
 
 ---
 
@@ -58,10 +58,10 @@ is fitting noise.
 #### Journal Publications
 
 "Detrimental Effects of Advanced Glycation End-Products (AGEs) on a 3D Skeletal Muscle Model in Microphysiological System."
-Kim et al., *Biosensors and Bioelectronics* 2025
+Kim et al., _Biosensors and Bioelectronics_ 2025
 
 "Investigation on the Effect of Cyclic Stretch and Hypoxia on Recovery of Damaged Skeletal Muscle Cells Using Microfluidic System."
-Kim et al., *Advanced Materials Technologies* 2021
+Kim et al., _Advanced Materials Technologies_ 2021
 
 ---
 
@@ -82,10 +82,10 @@ learn the coupling from.
 #### Journal Publications
 
 "Implementation of Drug-Induced Rhabdomyolysis and Acute Kidney Injury in Microphysiological System."
-Kim et al., *Advanced Functional Materials* 2026
+Kim et al., _Advanced Functional Materials_ 2026
 
 "Investigation of the Dysfunction Caused by High Glucose, Advanced Glycation End Products, and Interleukin-1 Beta and the Effects of Therapeutic Agents on the Microphysiological Artery Model."
-Nam et al., *Advanced Healthcare Materials* 2024
+Nam et al., _Advanced Healthcare Materials_ 2024
 
 ---
 
