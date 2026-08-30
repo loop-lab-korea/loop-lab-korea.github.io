@@ -259,16 +259,15 @@ img[src*="interorgan"] {
 
 
 /* ── Home banner ──────────────────────────────────────────────────────────
-   The concept figure is a transparent PNG, so it sits on whichever theme
-   background is active. No white card is needed.                           */
-.hero-banner {
-  margin: 0 0 2rem;
-  line-height: 0;
-}
-.hero-banner img {
-  width: 100%;
-  height: auto;
-  display: block;
+   The concept figure has a white ground (the panels themselves contain white,
+   so it cannot be made transparent without punching holes in the heatmap).
+   On the dark theme it is framed as a white card instead.                   */
+.hero-banner { margin: 0 0 2rem; line-height: 0; }
+.hero-banner img { width: 100%; height: auto; display: block; border-radius: 6px; }
+html[data-theme="dark"] .hero-banner {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
 }
 .hero-banner figcaption {
   line-height: 1.5;
@@ -279,5 +278,6 @@ img[src*="interorgan"] {
 }
 @media (max-width: 576px) {
   .hero-banner { margin-bottom: 1.5rem; }
+  html[data-theme="dark"] .hero-banner { padding: 7px; }
 }
 
