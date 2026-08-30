@@ -42,6 +42,7 @@ nav_order: 2
         VA Palo Alto Health Care System
       </span>
     </p>
+
   </div>
 </div>
 
