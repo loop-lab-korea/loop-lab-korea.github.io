@@ -71,11 +71,22 @@ html[data-theme="dark"] .navbar .container:not(:has(.navbar-brand))::before {
   border-radius: 4px;
 }
 
-/* ── Research page figures ────────────────────────────────────────────────── */
-
-
-.caption + .row img {
+/* ── Research page figures ──────────────────────────────────────────────────
+   Each figure keeps its own proportions; no fixed aspect-ratio box, so wide
+   strips are not letterboxed into tall frames.                              */
+.post .row figure img,
+.post .row img.img-fluid {
   border-radius: 6px;
+  height: auto;
+  max-height: 520px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.caption {
+  font-size: 0.86rem;
+  margin-top: 0.5rem;
 }
 
 /* ── Patents & Presentations: no thumbnails ───────────────────────────────
@@ -94,12 +105,38 @@ html[data-theme="dark"] .navbar .container:not(:has(.navbar-brand))::before {
   margin-left: 0;
 }
 
+
 /* ── Home profile ─────────────────────────────────────────────────────────
    al-folio stacks the profile above the text on narrow screens, where the
    photo then spans the full width and dominates the page. Keep it small and
    beside the address so the page opens on the writing.
 
    Markup is  .profile > figure > picture > img  plus a .address block.     */
+@media (max-width: 768px) {
+  .profile {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 14px;
+    float: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 1.5rem !important;
+    padding: 0 !important;
+  }
+  .profile figure,
+  .profile picture {
+    margin: 0 !important;
+    flex: 0 0 96px;
+    width: 96px;
+    display: block;
+  }
+  .profile img {
+    width: 96px !important;
+    height: auto !important;
+    margin: 0 !important;
+    border-radius: 6px;
+  }
+}
 
 /* ── Typography ───────────────────────────────────────────────────────────
    The theme ships Roboto. Newsreader for headings gives the page an
@@ -111,35 +148,17 @@ html[data-theme="dark"] .navbar .container:not(:has(.navbar-brand))::before {
    own family or the nav icons turn into words.                              */
 
 :root {
-  --loop-sans: "Inter", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --loop-sans: "Inter", "Noto Sans KR", -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Helvetica, Arial, sans-serif;
   --loop-serif: "Newsreader", "Noto Sans KR", Georgia, "Times New Roman", serif;
 }
 
 body,
-p,
-li,
-dd,
-dt,
-td,
-th,
-figcaption,
-blockquote,
-label,
-input,
-select,
-textarea,
-button,
-.nav-link,
-.navbar,
-.footer,
-.caption,
-.publications,
-.news,
-.post {
+p, li, dd, dt, td, th, figcaption, blockquote, label,
+input, select, textarea, button,
+.nav-link, .navbar, .footer, .caption, .publications, .news, .post {
   font-family: var(--loop-sans);
-  font-feature-settings:
-    "cv05" 1,
-    "ss01" 1;
+  font-feature-settings: "cv05" 1, "ss01" 1;
 }
 
 body {
@@ -148,26 +167,18 @@ body {
   letter-spacing: -0.003em;
 }
 
-h1,
-h2,
-h3,
-h4,
-.post-title,
-.publications h2.year {
+h1, h2, h3, h4,
+.post-title, .publications h2.year {
   font-family: var(--loop-serif);
   font-weight: 500;
   letter-spacing: -0.012em;
   line-height: 1.22;
 }
 
-h1 {
-  font-weight: 500;
-}
+h1 { font-weight: 500; }
 
 /* Section rules read better with a little air above them */
-h2 {
-  margin-top: 2.1rem;
-}
+h2 { margin-top: 2.1rem; }
 
 /* The publication list stays sans — it is reference material, not prose */
 .publications .title,
@@ -175,25 +186,21 @@ h2 {
 .publications .periodical {
   font-family: var(--loop-sans);
 }
-.publications .title {
-  font-weight: 600;
-  letter-spacing: -0.008em;
-}
-.publications .periodical {
-  font-style: italic;
-}
+.publications .title { font-weight: 600; letter-spacing: -0.008em; }
+.publications .periodical { font-style: italic; }
 
 /* Pull quotes and the tagline benefit from the serif */
-blockquote {
-  font-family: var(--loop-serif);
-  font-size: 1.12rem;
-}
+blockquote { font-family: var(--loop-serif); font-size: 1.12rem; }
 
 /* Code keeps a mono stack. Icon fonts are left alone entirely: the selectors
    above never match them, and overriding their family would turn every icon
    back into a word. */
-code,
-pre,
-kbd {
+code, pre, kbd {
   font-family: ui-monospace, SFMono-Regular, Menlo, "IBM Plex Mono", monospace;
+}
+
+
+/* Tall composite panels: keep them readable without dominating the page */
+img[src*="interorgan"] {
+  max-height: 620px;
 }
