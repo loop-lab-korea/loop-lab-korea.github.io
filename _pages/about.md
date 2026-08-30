@@ -21,8 +21,6 @@ profile:
 
 selected_papers: true
 social: true
-nav: true
-nav_order: 1
 
 announcements:
   enabled: true
