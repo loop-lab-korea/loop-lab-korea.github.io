@@ -2,34 +2,33 @@
 # Displayed in the order defined here.
 # See https://github.com/george-gca/jekyll-socials for the full list of keys.
 #
-# Anything left commented out simply does not render — no placeholder icon.
+# Anything left commented out is not rendered at all — no placeholder icon.
 
 email: jsang@jnu.ac.kr
 
-# Google Scholar. The ID is the `user=` value in your Scholar profile URL.
+# Google Scholar. The ID is the `user=` value in the profile URL.
 scholar_userid: fav7NlMAAAAJ
 
-# ORCID. Uncomment and fill in once registered — it is worth having.
+# Department / graduate school
+custom_social:
+  logo: jnu-mark.png
+  title: Graduate School of Data Science, Chonnam National University
+  url: https://ds.jnu.ac.kr
+
+# ORCID — worth registering; uncomment once you have an ID.
 # orcid_id: 0000-0000-0000-0000
 
-# GitHub organisation for the lab.
-github_username: loop-lab-korea
-
-# Uncomment after uploading your CV to assets/pdf/.
+# Uncomment after uploading the CV to assets/pdf/.
 # cv_pdf: cv.pdf
 
-# ResearchGate: the part after /profile/ in your profile URL.
 # research_gate_profile: Jaesang-Kim
-
-# LinkedIn: the part after /in/ in your profile URL.
 # linkedin_username:
-
-# RSS feed icon. Uncomment only if you start writing blog posts.
-# rss_icon: true
+# rss_icon: true          # only once there are blog posts
 
 # ── Removed al-folio placeholders ────────────────────────────────────────
 # cv_pdf: /assets/pdf/example_pdf.pdf   ← sample PDF
 # email: you@example.com                ← sample address
 # inspirehep_id: 1010907                ← physics database, not applicable
 # scholar_userid: qc6CJjYAAAAJ          ← the theme author's Scholar profile
-# custom_social:                        ← linked to alberteinstein.com
+# custom_social: alberteinstein.com     ← al-folio demo link
+# github_username: loop-lab-korea       ← repo is site source, not a research link

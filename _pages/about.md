@@ -5,7 +5,7 @@ permalink: /
 subtitle: >
   <strong>L</strong>earning through <strong>O</strong>rgan <strong>O</strong>bservations and
   <strong>P</strong>erturbations · 장기반응 모델링 연구실 ·
-  <a href="https://gsds.jnu.ac.kr/">Graduate School of Data Science</a>,
+  <a href="https://ds.jnu.ac.kr/">Graduate School of Data Science</a>,
   <a href="https://www.jnu.ac.kr/">Chonnam National University</a>
 
 profile:
