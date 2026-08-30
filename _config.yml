@@ -18,7 +18,8 @@ footer_text: >
   <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: LOOP Lab, organ modeling, data science, Chonnam National University, 전남대학교, 장기반응 모델링
 lang: en
-icon: 🫀
+icon: favicon.png
+apple_touch_icon: apple-touch-icon.png
 
 url: https://loop-lab-korea.github.io
 baseurl:
