@@ -112,31 +112,6 @@ html[data-theme="dark"] .navbar .container:not(:has(.navbar-brand))::before {
    beside the address so the page opens on the writing.
 
    Markup is  .profile > figure > picture > img  plus a .address block.     */
-@media (max-width: 768px) {
-  .profile {
-    display: flex !important;
-    align-items: flex-start;
-    gap: 14px;
-    float: none !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 0 1.5rem !important;
-    padding: 0 !important;
-  }
-  .profile figure,
-  .profile picture {
-    margin: 0 !important;
-    flex: 0 0 96px;
-    width: 96px;
-    display: block;
-  }
-  .profile img {
-    width: 96px !important;
-    height: auto !important;
-    margin: 0 !important;
-    border-radius: 6px;
-  }
-}
 
 /* ── Typography ───────────────────────────────────────────────────────────
    The theme ships Roboto. Newsreader for headings gives the page an
@@ -203,4 +178,89 @@ code, pre, kbd {
 /* Tall composite panels: keep them readable without dominating the page */
 img[src*="interorgan"] {
   max-height: 620px;
+}
+
+
+/* ── Publications list ────────────────────────────────────────────────────
+   The theme lays each entry out as col-sm-2 + col-sm-8, so two of the twelve
+   columns are left empty and the text wraps far earlier than it needs to.
+   Give the thumbnail a fixed width and hand the rest to the text.          */
+.publications li .row > .col-sm-2,
+.publications li .row > .col.col-sm-2 {
+  flex: 0 0 auto;
+  width: 175px;
+  max-width: 175px;
+}
+.publications li .row > .col-sm-8 {
+  flex: 1 1 auto;
+  width: auto;
+  max-width: none;
+}
+@media (max-width: 576px) {
+  .publications li .row > .col-sm-2,
+  .publications li .row > .col.col-sm-2,
+  .publications li .row > .col-sm-8 {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ── People: principal investigator block ─────────────────────────────────
+   One role line instead of three stacked fragments, and a labelled block
+   for each section so the entry reads as a record rather than loose lines. */
+.pi-role {
+  margin: 0 0 1.25rem;
+  line-height: 1.55;
+}
+.pi-role-ko {
+  color: var(--global-text-color-light, #888);
+  font-size: 0.92em;
+}
+.pi-block {
+  margin: 0 0 1rem;
+  line-height: 1.6;
+}
+.pi-label {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light, #888);
+  margin-bottom: 0.15rem;
+  font-weight: 600;
+}
+.pi-sub {
+  display: inline-block;
+  padding-left: 1.1em;
+  color: var(--global-text-color-light, #888);
+  font-size: 0.94em;
+}
+
+
+/* ── Home banner ──────────────────────────────────────────────────────────
+   A single wide image above the text. Full container width, fixed 3:1 crop,
+   so the page opens on the work rather than on a portrait.                 */
+.hero-banner {
+  margin: 0 0 2rem;
+  line-height: 0;
+}
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2400 / 980;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+  background: #0b0d10;
+}
+.hero-banner figcaption {
+  line-height: 1.5;
+  font-size: 0.82rem;
+  color: var(--global-text-color-light, #888);
+  margin-top: 0.5rem;
+  text-align: right;
+}
+@media (max-width: 576px) {
+  .hero-banner img { aspect-ratio: 2400 / 980; border-radius: 6px; }
+  .hero-banner { margin-bottom: 1.5rem; }
 }
