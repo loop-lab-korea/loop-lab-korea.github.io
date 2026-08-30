@@ -6,6 +6,7 @@ nav: true
 nav_order: 6
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/loop.css' | relative_url }}">
 ## CONTACT INFORMATION
 
 #### Professor

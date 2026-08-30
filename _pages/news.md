@@ -6,6 +6,7 @@ nav: true
 nav_order: 5
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/loop.css' | relative_url }}">
 <div class="news">
   {% assign news = site.news | sort: 'date' | reverse %}
   {% if news.size > 0 %}

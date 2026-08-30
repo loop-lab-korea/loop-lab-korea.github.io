@@ -1,0 +1,74 @@
+/* ---------------------------------------------------------------------------
+   LOOP Lab — site overrides
+
+   al-folio v1.x is a thin starter: _includes, _layouts, _sass, _scripts and
+   tailwind.config.js belong to the gems and the style contract (test/
+   style_contract.js) fails the build if the starter owns any of them.
+   So all customisation lives here, in a plain stylesheet under assets/,
+   linked from each page in _pages/.
+   --------------------------------------------------------------------------- */
+
+/* ── Brand lockup ─────────────────────────────────────────────────────────
+   The gem prints the site title as text, and prints nothing at all on the
+   home page. Two rules cover both cases with the same artwork.             */
+
+/* 1. Every page except home: the real brand link is kept (so it still goes
+      home) but its text is swapped for the logo. */
+.navbar-brand.title {
+  display: inline-block;
+  width: 166px;
+  height: 34px;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  background: url("../img/loop-logo.png") left center / contain no-repeat;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* 2. Home page: the gem renders no brand at all, so draw it on the navbar
+      container instead. :not(:has(...)) keeps it off every other page.     */
+.navbar .container:not(:has(.navbar-brand))::before {
+  content: "";
+  flex: 0 0 auto;
+  align-self: center;
+  width: 166px;
+  height: 34px;
+  background: url("../img/loop-logo.png") left center / contain no-repeat;
+}
+
+/* 3. Dark theme uses the light-lettered artwork. */
+html[data-theme="dark"] .navbar-brand.title,
+html[data-theme="dark"] .navbar .container:not(:has(.navbar-brand))::before {
+  background-image: url("../img/loop-logo-dark.png");
+}
+
+@media (max-width: 576px) {
+  .navbar-brand.title,
+  .navbar .container:not(:has(.navbar-brand))::before {
+    width: 127px;
+    height: 26px;
+  }
+}
+
+/* ── Publications ─────────────────────────────────────────────────────────── */
+
+/* Own name in bold rather than italic */
+.publications .author em {
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Thumbnails square and tidy */
+.publications .preview img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* ── Research page figures ────────────────────────────────────────────────── */
+
+.research-fig img,
+.caption + .row img {
+  border-radius: 6px;
+}

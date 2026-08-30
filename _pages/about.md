@@ -31,6 +31,7 @@ latest_posts:
   enabled: false
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/loop.css' | relative_url }}">
 #### We make the data our models are judged by.
 
 A model that predicts how a drug will act is only as good as the measurements it

@@ -6,6 +6,7 @@ nav: true
 nav_order: 2
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/loop.css' | relative_url }}">
 ## **Principal Investigator**
 
 <div class="row">
