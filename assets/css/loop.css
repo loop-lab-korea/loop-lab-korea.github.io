@@ -21,7 +21,7 @@
   font-size: 0;
   line-height: 0;
   color: transparent;
-  background: url("../img/loop-logo-alt.png") left center / contain no-repeat;
+  background: url("../img/loop-logo.png") left center / contain no-repeat;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -34,13 +34,13 @@
   align-self: center;
   width: 166px;
   height: 34px;
-  background: url("../img/loop-logo-alt.png") left center / contain no-repeat;
+  background: url("../img/loop-logo.png") left center / contain no-repeat;
 }
 
 /* 3. Dark theme uses the light-lettered artwork. */
 html[data-theme="dark"] .navbar-brand.title,
 html[data-theme="dark"] .navbar .container:not(:has(.navbar-brand))::before {
-  background-image: url("../img/loop-logo-alt-dark.png");
+  background-image: url("../img/loop-logo-dark.png");
 }
 
 @media (max-width: 576px) {
@@ -71,4 +71,20 @@ html[data-theme="dark"] .navbar .container:not(:has(.navbar-brand))::before {
 
 .caption + .row img {
   border-radius: 6px;
+}
+
+/* ── Patents & Presentations: no thumbnails ───────────────────────────────
+   These entries have no figure of their own, and al-folio otherwise leaves
+   an empty thumbnail column that misaligns the rows.                       */
+.publications.no-thumbs .preview,
+.publications.no-thumbs .col-sm-2,
+.publications.no-thumbs .row .col-sm-2 {
+  display: none !important;
+}
+.publications.no-thumbs .col-sm-10,
+.publications.no-thumbs li > .row > div:last-child {
+  width: 100%;
+  max-width: 100%;
+  flex: 0 0 100%;
+  margin-left: 0;
 }
