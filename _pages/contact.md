@@ -30,5 +30,3 @@ We are recruiting M.S. and Ph.D. students and undergraduate interns. Email
 [jsang@jnu.ac.kr](mailto:jsang@jnu.ac.kr) and tell me what you have been working on
 and what you would like to work on. There is no fixed deadline; enquiries are welcome
 at any time.
-
-<sub>전남대학교 데이터사이언스대학원 · 광주광역시 북구 용봉로 77</sub>
