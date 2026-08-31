@@ -13,11 +13,14 @@ nav_order: 6
 Assistant Professor, Graduate School of Data Science<br>
 Chonnam National University
 
-77 Yongbong-ro, Buk-gu, Gwangju 61186, Republic of Korea<br>
-E-mail : [jsang@jnu.ac.kr](mailto:jsang@jnu.ac.kr)
+Room 305, Library Annex, 77 Yongbong-ro, Buk-gu, Gwangju 61186, Republic of Korea
 
-The laboratory opens in September 2026. Room and telephone details will be added
-once they are assigned.
+Tel : +82-62-530-5792
+E-mail : jsang@jnu.ac.kr
+
+전남대학교 데이터사이언스대학원 · 광주광역시 북구 용봉로 77 도서관 별관 305호 · 062-530-5792
+
+The laboratory opens in September 2026.
 
 ---
 
