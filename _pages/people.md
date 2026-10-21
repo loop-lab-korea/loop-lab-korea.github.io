@@ -50,7 +50,8 @@ nav_order: 2
 
 ## **Members**
 
-{% comment %} 구성원 정보는 _data/members.yml 에서 고친다. 이 아래는 건드릴 필요 없음. {% endcomment %}
+{% comment %} 구성원 정보는 \_data/members.yml 에서 고친다. 이 아래는 건드릴 필요 없음. {% endcomment %}
+
 <div class="row">
 {%- for m in site.data.members %}
   <div class="col-md-6">
