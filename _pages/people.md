@@ -50,23 +50,36 @@ nav_order: 2
 
 ## **Members**
 
-<p class="text-muted">
-The lab opens in September 2026. This is where the first graduate students and
-interns will be listed — if you are reading this before then, every position is
-open.
-</p>
-
+{% comment %} 구성원 정보는 _data/members.yml 에서 고친다. 이 아래는 건드릴 필요 없음. {% endcomment %}
 <div class="row">
-  <div class="col-sm-4 mt-3">
-    <div class="p-4 border rounded text-center text-muted">
-      <b>Ph.D. / M.S.</b><br><small>from 2026</small>
+{%- for m in site.data.members %}
+  <div class="col-md-6">
+    <div class="member">
+      {%- if m.photo %}
+      <img class="member-photo" src="{{ '/assets/img/people/' | append: m.photo | relative_url }}" alt="{{ m.name_en }}" loading="lazy">
+      {%- else %}
+      {%- assign parts = m.name_en | split: " " %}
+      <div class="member-photo member-photo-empty" aria-hidden="true">{{ parts.first | slice: 0 }}{% if parts.size > 1 %}{{ parts.last | slice: 0 }}{% endif %}</div>
+      {%- endif %}
+      <div class="member-body">
+        <h3 class="member-name">{% if m.name_ko %}{{ m.name_ko }} ({{ m.name_en }}){% else %}{{ m.name_en }}{% endif %}</h3>
+        <p class="member-role">{{ m.role }}{% if m.email %}<br><a href="mailto:{{ m.email }}">{{ m.email }}</a>{% endif %}</p>
+        {%- if m.education %}
+        <p class="member-block">
+          <b class="pi-label">Education</b>
+          {{ m.education | join: "<br>" }}
+        </p>
+        {%- endif %}
+        {%- if m.interests %}
+        <p class="member-block">
+          <b class="pi-label">Interests</b>
+          {{ m.interests }}
+        </p>
+        {%- endif %}
+      </div>
     </div>
   </div>
-  <div class="col-sm-4 mt-3">
-    <div class="p-4 border rounded text-center text-muted">
-      <b>Undergraduate researcher</b><br><small>year-round</small>
-    </div>
-  </div>
+{%- endfor %}
 </div>
 
 ---

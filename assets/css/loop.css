@@ -336,7 +336,8 @@ img[src*="/model.jpg"] {
 /* ── People: members ──────────────────────────────────────────────────────
    Entries come from _data/members.yml, two to a row. The portrait is cropped
    to a fixed 3:4 so photos of any size line up; until a photo arrives the
-   initials stand in its place, so an entry never looks broken.             */
+   initials stand in its place, so an entry never looks broken. A hairline
+   keeps white-background ID photos from dissolving into the page.          */
 .member {
   display: flex;
   gap: 1.1rem;
@@ -350,6 +351,7 @@ img[src*="/model.jpg"] {
   object-fit: cover;
   object-position: center top;
   border-radius: 6px;
+  box-shadow: 0 0 0 1px var(--global-divider-color, rgba(0, 0, 0, 0.1));
 }
 .member-photo-empty {
   display: flex;

@@ -1,0 +1,19 @@
+# PEOPLE 페이지 Members 목록. 적힌 순서대로 표시된다.
+# name_en만 필수. 없는 항목은 줄째 지우면 화면에서도 빠진다.
+# 값에 콜론(:)이 들어가면 따옴표로 감쌀 것.
+#
+# - name_ko: 홍길동
+#   name_en: Gildong Hong
+#   role: M.S. Student
+#   photo: gildong-hong.jpg        # assets/img/people/ 에 올린 파일명. 없으면 이니셜이 대신 표시됨
+#   education:
+#     - B.S. Computer Science, Chonnam National University
+#   interests: Machine learning for drug response
+#   email: gildong@jnu.ac.kr
+
+- name_ko: 임완
+  name_en: Wan Lim
+  role: M.S. Student
+  photo: wan-lim.jpg
+  education:
+    - Physical Education, Korea University, double major in English Language and Literature
