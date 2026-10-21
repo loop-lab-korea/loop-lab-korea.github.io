@@ -292,6 +292,11 @@ img[src*="interorgan"] {
   font-size: 0.94em;
 }
 
+/* ── People: members ──────────────────────────────────────────────────────
+   Entries come from _data/members.yml, two to a row. The portrait is cropped
+   to a fixed 3:4 so photos of any size line up; until a photo arrives the
+   initials stand in its place, so an entry never looks broken.             */
+
 /* ── Home hero ────────────────────────────────────────────────────────────
    The title banner carries the lab name, the expansion, the Korean name and
    the affiliation, so the theme's own <h1> and subtitle would repeat it.
