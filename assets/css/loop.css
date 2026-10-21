@@ -333,6 +333,54 @@ img[src*="/model.jpg"] {
   font-size: 0.94em;
 }
 
+/* ── People: members ──────────────────────────────────────────────────────
+   Entries come from _data/members.yml, two to a row. The portrait is cropped
+   to a fixed 3:4 so photos of any size line up; until a photo arrives the
+   initials stand in its place, so an entry never looks broken.             */
+.member {
+  display: flex;
+  gap: 1.1rem;
+  align-items: flex-start;
+  margin-top: 1.25rem;
+}
+.member-photo {
+  flex: 0 0 96px;
+  width: 96px;
+  height: 128px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 6px;
+}
+.member-photo-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--global-divider-color, rgba(0, 0, 0, 0.1));
+  color: var(--global-text-color-light, #888);
+  font-family: var(--loop-serif);
+  font-size: 1.55rem;
+  letter-spacing: 0.04em;
+}
+.member-body {
+  min-width: 0;
+}
+.member-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.1rem 0 0.15rem;
+}
+.member-role {
+  margin: 0 0 0.7rem;
+  color: var(--global-text-color-light, #888);
+  font-size: 0.92em;
+  line-height: 1.5;
+}
+.member-block {
+  margin: 0 0 0.6rem;
+  font-size: 0.94em;
+  line-height: 1.55;
+}
+
 /* ── Home hero ────────────────────────────────────────────────────────────
    The title banner carries the lab name, the expansion, the Korean name and
    the affiliation, so the theme's own <h1> and subtitle would repeat it.
