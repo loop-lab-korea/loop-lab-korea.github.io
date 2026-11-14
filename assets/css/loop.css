@@ -239,6 +239,18 @@ blockquote {
   font-size: 1.12rem;
 }
 
+/* Bold in running text. The theme sets body text to weight 300, so the
+   browser's default `bolder` for <strong>/<b> only reaches 400 and looks the
+   same as the words around it. Pin it to 600. Inside headings keep the
+   relative step, so a bold heading stays exactly as it was. */
+strong,
+b {
+  font-weight: 600;
+}
+:is(h1, h2, h3, h4, h5, h6) :is(strong, b) {
+  font-weight: bolder;
+}
+
 /* Code keeps a mono stack. Icon fonts are left alone entirely: the selectors
    above never match them, and overriding their family would turn every icon
    back into a word. */
