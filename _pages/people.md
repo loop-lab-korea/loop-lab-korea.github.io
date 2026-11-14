@@ -87,13 +87,13 @@ nav_order: 2
 
 ## **Join us**
 
-We are recruiting **M.S. and Ph.D. students** and **undergraduate researchers**.
-Backgrounds in mechanical engineering, life sciences, chemical engineering, computer
-science and statistics are all suitable — the work moves between the bench and the
-data, and you are not expected to arrive proficient in both.
+We are looking for an **M.S. or Ph.D. student who can design and build
+organ-on-a-chip devices**: microfluidic fabrication, simulation in COMSOL or a
+similar tool, or CAD and 3D printing. Any one of these is enough to start, and the
+data side can be learned here. Undergraduate researchers are also welcome.
 
 Email <a href="mailto:jsang@jnu.ac.kr">jsang@jnu.ac.kr</a> and tell me what you have
 been working on and what you would like to work on.
 
-<sub>석·박사과정과 학부 인턴을 상시 모집합니다. 실험과 데이터 어느 쪽에서
-출발하셔도 좋습니다.</sub>
+<sub>장기칩 설계·제작, COMSOL 해석, CAD·3D 프린팅 중 하나라도 해본 석·박사과정
+학생을 찾습니다. 학부 인턴도 받습니다.</sub>

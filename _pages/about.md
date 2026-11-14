@@ -3,7 +3,7 @@ layout: about
 title: HOME
 permalink: /
 subtitle: >
-  <strong>L</strong>earning through <strong>O</strong>rgan <strong>O</strong>bservations and
+  <strong>L</strong>earning from <strong>O</strong>rgan-on-a-Chip <strong>O</strong>bservations and
   <strong>P</strong>erturbations · 장기반응 모델링 연구실 ·
   <a href="https://ds.jnu.ac.kr/">Graduate School of Data Science</a>,
   <a href="https://www.jnu.ac.kr/">Chonnam National University</a>
@@ -23,7 +23,7 @@ latest_posts:
 <link rel="stylesheet" href="{{ '/assets/css/loop.css' | relative_url }}">
 <figure class="hero-title">
   <img src="{{ '/assets/img/hero-title.jpg' | relative_url }}"
-       alt="LOOP Lab — Learning through Organ Observations and Perturbations.
+       alt="LOOP Lab: Learning from Organ-on-a-Chip Observations and Perturbations.
             장기반응 모델링 연구실. Graduate School of Data Science,
             Chonnam National University">
 </figure>
@@ -78,24 +78,29 @@ into data a model can be judged against.
 
 ### Join us
 
-We are recruiting **M.S. and Ph.D. students** and **undergraduate interns**.
+We are looking for an **M.S. or Ph.D. student who can design and build the chips
+our data come from**. Experience in any one of these is enough to start:
 
-The work moves between growing cells at the bench and handling the data those cells
-produce. You are not expected to be proficient in both — starting from one side and
-being willing to cross over is enough. Backgrounds in mechanical engineering, life
-sciences, chemical engineering, computer science and statistics are all suitable.
+- microfluidic organ-on-a-chip devices: design, fabrication, or culturing cells in them
+- flow, diffusion or structural simulation in COMSOL or a similar tool
+- CAD and 3D printing for device parts and prototypes
 
-If you came to data science to work on models, this is a place where you can also
-decide what the training data is.
+Mechanical, biomedical and chemical engineering backgrounds fit well. Undergraduate
+interns are also welcome.
+
+If you have built devices before, this is a place where you can also model the data
+they produce. You do not need to arrive knowing how.
 
 Email [jsang@jnu.ac.kr](mailto:jsang@jnu.ac.kr) and tell me what you have been
 working on and what you would like to work on.
 
 <div class="text-muted mt-3" style="font-size:.94rem">
-<p><b>석·박사과정 및 학부 인턴을 상시 모집합니다.</b></p>
-<p class="mb-1">실험과 데이터 사이를 오가는 연구입니다. 둘 다 잘할 필요는 없습니다. 한쪽에서
-출발해 다른 쪽으로 건너올 생각이 있으면 됩니다. 기계·생명·화공·컴퓨터·통계 어느
-배경이든 좋습니다.</p>
+<p><b>장기칩을 설계하고 만들 석·박사과정 학생을 찾습니다.</b></p>
+<p class="mb-1">미세유체 장기칩 설계·제작(또는 칩에서의 세포 배양), COMSOL 등을 이용한
+유동·확산·구조 해석, CAD와 3D 프린팅을 이용한 부품·시제품 제작. 이 중 하나라도
+해봤다면 충분합니다. 기계·의공·화공 배경이면 잘 맞고, 학부 인턴도 받습니다.</p>
+<p class="mb-1">우리 연구실 데이터는 이 칩에서 나옵니다. 칩을 만든 사람이 그 데이터로
+모델까지 다뤄 볼 수 있고, 데이터 분석은 들어와서 배우면 됩니다.</p>
 <p><a href="mailto:jsang@jnu.ac.kr">jsang@jnu.ac.kr</a>로 지금까지 해온 것과
 앞으로 해보고 싶은 것을 적어 보내주세요.</p>
 </div>

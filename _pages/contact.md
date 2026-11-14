@@ -20,13 +20,15 @@ E-mail : jsang@jnu.ac.kr
 
 전남대학교 데이터사이언스대학원 · 광주광역시 북구 용봉로 77 도서관 별관 305호 · 062-530-5792
 
-The laboratory opens in September 2026.
+The laboratory opened in September 2026.
 
 ---
 
 #### Prospective students
 
-We are recruiting M.S. and Ph.D. students and undergraduate interns. Email
+We are looking for an M.S. or Ph.D. student who can design and build organ-on-a-chip
+devices (microfluidic fabrication, COMSOL simulation, or CAD and 3D printing).
+Undergraduate interns are also welcome. Email
 [jsang@jnu.ac.kr](mailto:jsang@jnu.ac.kr) and tell me what you have been working on
 and what you would like to work on. There is no fixed deadline; enquiries are welcome
 at any time.
